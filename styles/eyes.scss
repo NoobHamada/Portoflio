@@ -1,0 +1,72 @@
+@use './colors.scss' as *;
+
+.eyes {
+    position: fixed;
+    display: flex;
+    gap: 75px;
+    justify-content: center;
+    flex-wrap: wrap;
+    transform: rotate(20deg) scale(1.2);
+    -webkit-transform: rotate(20deg) scale(1.2);
+    -moz-transform: rotate(20deg) scale(1.2);
+    -ms-transform: rotate(20deg) scale(1.2);
+    -o-transform: rotate(20deg) scale(1.2);
+    z-index: -1;
+}
+
+.eyes .eye {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: $eyeInnerColor;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    box-shadow: 0 0 30px rgba(175, 20, 175, 0.5), inset 0 0 15px #7E0027;
+    filter: blur(2.1px);
+    -webkit-filter: blur(2.1px);
+}
+
+.eyes .eye::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 35px;
+    transform: translate(-50%, -50%);
+    width: 4px;
+    height: 5px;
+    background-color: #FE0077;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    box-sizing: border-box;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+.eyes .eye::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 35px;
+    transform: translate(-50%, -50%);
+    width: 3px;
+    height: 3px;
+    background-color: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    filter: blur(1.2px);
+    -webkit-filter: blur(1.2px);
+}

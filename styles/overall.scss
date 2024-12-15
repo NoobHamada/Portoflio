@@ -1,0 +1,39 @@
+@use './colors.scss' as *;
+
+header {
+    display: none;
+    text-align: center;
+    height: clamp(50px, 50px, 100px);
+    width: clamp(120px, 65%, 630px);
+    color: $text;
+    font-size: 200%;
+    font-style: italic;
+    border: 2px solid white;
+    border-radius: 15px 0;
+    -webkit-border-radius: 15px 0;
+    -moz-border-radius: 15px 0;
+    -ms-border-radius: 15px 0;
+    -o-border-radius: 15px 0;
+    >span {
+        text-decoration: line-through 2px;
+        color: #bbbbbb;
+        font-style: normal;
+    }
+}
+
+img {
+    cursor: pointer;
+    min-width: 200px;
+    min-height: 120px;
+    border: 10px solid white;
+    border-radius: 15px 0;
+    -webkit-border-radius: 15px 0;
+    -moz-border-radius: 15px 0;
+    -ms-border-radius: 15px 0;
+    -o-border-radius: 15px 0;
+}
+
+#contact, #whatsNum {
+    color: white;
+    font-size: 20px;
+}
